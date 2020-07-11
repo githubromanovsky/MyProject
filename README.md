@@ -13,7 +13,7 @@ Enter in terminal Linux: python3 scanport.py
              
 \**************************************************\
 Select [1] to scan the IPv4 port TCP type  
-Select [2] to scan the IPv4 port list TCP type \
+Select [2] to scan the IPv4 port list TCP type  
 Select [3] to exit  
 \**************************************************\
 [Scan]:
