@@ -61,9 +61,7 @@ while True:
     print(colored(("*" * 50), 'blue'))
     print(colored("Select [1] to scan the IPv4 port TCP type", 'green'))
     print(colored("Select [2] to scan the IPv4 port list TCP type", 'green'))
-    print(colored("Select [2] to scan the port list IPv4 and type TCP", 'green'))
-    print(colored("Select [3] to scan the port list IPv6 and type TCP in the process", 'green'))
-    print(colored("Select [4] to exit", 'green'))
+    print(colored("Select [3] to exit", 'green'))
     print(colored(("*" * 50), 'blue'))
     text_a = input("[Scan]:")
     if text_a == "1":
@@ -72,7 +70,7 @@ while True:
     elif text_a == "2":
         scan_not_list_port()
         continue
-    elif text_a == "4":
+    elif text_a == "3":
         exit()
     else:
         print(colored("You entered a nonexistent line item", 'red'))
