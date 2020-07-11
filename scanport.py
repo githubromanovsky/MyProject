@@ -25,6 +25,7 @@ def scan_not_list_port():
 
 
 def scan_list_port():
+    """Create socket for connect to host and port"""
     host = input("host:")
     print(colored("Enter a list elements separated by space", 'yellow'))
     # Create list ports
