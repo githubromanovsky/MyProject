@@ -3,7 +3,8 @@
 
 ## Использование:
 
-Enter in terminal Linux: python3 scanport.py
+Enter in terminal Linux: python3 scanport.py  
+При выборе Select [1] to scan the IPv4 port TCP type - номера портов вводятся через пробел
 
      _____   _____   ____   ___ __  _____   ___   ______  ______
     / ____) /  ___) /  __\ (   (  \(  __ \ /   \ (   __ \(__  __)
@@ -13,8 +14,7 @@ Enter in terminal Linux: python3 scanport.py
 \**************************************************\
 Select [1] to scan the IPv4 port TCP type  
 Select [2] to scan the IPv4 port list TCP type \
-Select [3] to exit
-
+Select [3] to exit  
 \**************************************************\
 [Scan]:
 
