@@ -1,6 +1,6 @@
 # Использование:
 
-Entered terminal Linux: python3 scanport.py
+Enter in terminal Linux: python3 scanport.py
 # Отказ от ответственности:
 
 Программа создана в целях обучения и ответственность за вред нанесённый использованием данной программы как моральный, 
