@@ -55,10 +55,16 @@ def scan_list_port():
 
 def dns_resolve():
     """DNS resolve A record"""
-    name_site = input('Input site name:')
-    result = dns.resolver.query(name_site, 'A')
-    for ip in result:
-        print('IP', ip.to_text())
+    try:
+        name_site = input('Input site name:')
+        result = dns.resolver.query(name_site, 'A')
+    except dns.resolver.NoNameservers:
+        print("Error dns resolver, server no name")
+    except dns.resolver.NXDOMAIN:
+        print("None of DNS query names exist")
+    else:
+        for ip in result:
+            print('IP', ip.to_text())
 
 
 while True:
