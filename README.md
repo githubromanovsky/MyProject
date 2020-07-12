@@ -6,7 +6,8 @@ Port scan TCP for availability
 ## Using:
 
 Enter in terminal Linux: python3 scanport.py  
-При выборе Select [1] to scan the IPv4 port TCP type - номера портов вводятся через пробел
+Select [2] to scan the IPv4 port TCP type - port numbers are entered with a space  
+Also added function resolve A record DNS
 
      _____   _____   ____   ___ __  _____   ___   ______  ______
     / ____) /  ___) /  __\ (   (  \(  __ \ /   \ (   __ \(__  __)
