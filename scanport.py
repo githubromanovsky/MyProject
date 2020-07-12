@@ -22,7 +22,7 @@ def scan_not_list_port():
         print(colored("Your Network is unreachable", 'red'))
     else:
         print("_" * 30, "PORT", port, "[OPEN]", "\n")
-
+    scan.close()
 
 def scan_list_port():
     """Create socket for connect to host and port"""
@@ -48,7 +48,7 @@ def scan_list_port():
             print("OverflowError: port must be 0-65535", "Port:", i)
         else:
             print("_" * 30, "PORT", i, "[OPEN]")
-
+        scan.close()
 
 while True:
     print(colored(r"""
