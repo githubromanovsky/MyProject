@@ -59,9 +59,9 @@ def dns_resolve():
         name_site = input('Input site name:')
         result = dns.resolver.query(name_site, 'A')
     except dns.resolver.NoNameservers:
-        print("Error dns resolver, server no name")
+        print(colored("Error dns resolver, server no name", 'red'))
     except dns.resolver.NXDOMAIN:
-        print("None of DNS query names exist")
+        print(colored("None of DNS query names exist", 'red'))
     else:
         for ip in result:
             print('IP', ip.to_text())
