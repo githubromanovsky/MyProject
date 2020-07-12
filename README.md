@@ -1,5 +1,5 @@
 ## Program Purpose:
-Port scan TCP for availability
+Port scan TCP for availability  
 Also added function resolve A record DNS
 
 ## Using:
