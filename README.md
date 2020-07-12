@@ -1,7 +1,9 @@
-## Назначение:
-Проверка на открытые/закрытые TCP порты локальных и удалённых хостов.
+## Program Purpose:
+Port scan TCP for availability
 
-## Использование:
+
+
+## Using:
 
 Enter in terminal Linux: python3 scanport.py  
 При выборе Select [1] to scan the IPv4 port TCP type - номера портов вводятся через пробел
