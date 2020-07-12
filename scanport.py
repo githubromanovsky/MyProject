@@ -24,6 +24,7 @@ def scan_not_list_port():
         print("_" * 30, "PORT", port, "[OPEN]", "\n")
     scan.close()
 
+
 def scan_list_port():
     """Create socket for connect to host and port"""
     host = input("host:")
@@ -49,6 +50,7 @@ def scan_list_port():
         else:
             print("_" * 30, "PORT", i, "[OPEN]")
         scan.close()
+
 
 while True:
     print(colored(r"""
