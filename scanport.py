@@ -1,4 +1,5 @@
 import socket
+import dns.resolver
 from termcolor import colored
 
 
@@ -52,6 +53,14 @@ def scan_list_port():
         scan.close()
 
 
+def dns_resolve():
+    """DNS resolve A кусщкв"""
+    name_site= input('Input site name:')
+    result = dns.resolver.query(name_site, 'A')
+    for ip in result:
+        print('IP', ip.to_text())
+
+
 while True:
     print(colored(r"""
      _____   _____   ____   ___ __  _____   ___   ______  ______
@@ -60,18 +69,22 @@ while True:
     (_____/ \_____)\__/\__/\__)___)(___)   \___/ (___\__)  (__)
              """, 'green'))
     print(colored(("*" * 50), 'blue'))
-    print(colored("Select [1] to scan the IPv4 port TCP type", 'green'))
-    print(colored("Select [2] to scan the IPv4 port list TCP type", 'green'))
-    print(colored("Select [3] to exit", 'green'))
+    print(colored("Select [1] to resolve A record DNS", 'green'))
+    print(colored("Select [2] to scan the IPv4 port TCP type", 'green'))
+    print(colored("Select [3] to scan the IPv4 port list TCP type", 'green'))
+    print(colored("Select [4] to exit", 'green'))
     print(colored(("*" * 50), 'blue'))
-    text_a = input("[Scan]:")
-    if text_a == "1":
+    select = input("[Scan]:")
+    if select == "1":
+        dns_resolve()
+        continue
+    elif select == "2":
         scan_not_list_port()
         continue
-    elif text_a == "2":
+    elif select == "3":
         scan_list_port()
         continue
-    elif text_a == "3":
+    elif select == "4":
         exit()
     else:
         print(colored("You entered a nonexistent line item", 'red'))
