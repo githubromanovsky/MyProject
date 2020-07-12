@@ -54,7 +54,7 @@ def scan_list_port():
 
 
 def dns_resolve():
-    """DNS resolve A кусщкв"""
+    """DNS resolve A record"""
     name_site= input('Input site name:')
     result = dns.resolver.query(name_site, 'A')
     for ip in result:
