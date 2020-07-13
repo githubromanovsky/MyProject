@@ -3,7 +3,7 @@ Port scan TCP for availability
 Also added function resolve A record DNS
 
 ## Using:
-
+Enter
 Enter in terminal Linux: python3 scanport.py  
 Select [3] to scan the IPv4 port TCP type - port numbers are entered with a space  
 
